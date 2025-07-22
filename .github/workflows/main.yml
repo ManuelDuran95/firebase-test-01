@@ -28,17 +28,17 @@ jobs:
 
 # --- All build steps remain the same ---
 
-     - name: Setup Flutter
-       uses: subosito/flutter-action@v2
-       with:
-        channel: 'stable'
+     # - name: Setup Flutter
+     #   uses: subosito/flutter-action@v2
+     #   with:
+     #    channel: 'stable'
     
-     - name: Install Flutter Dependencies
-       run: flutter pub get
+     # - name: Install Flutter Dependencies
+     #   run: flutter pub get
 
 
-     - name: Build Web App
-       run: flutter build web --release
+     # - name: Build Web App
+     #   run: flutter build web --release
 
      - name: Setup Node.js
        uses: actions/setup-node@v4
